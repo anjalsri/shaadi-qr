@@ -1,5 +1,11 @@
 # Shaadi QR - Wedding Memory QR Platform (India)
 
+[![Deploy to Render](https://render.com/images/deploy-to-render.svg)](https://render.com/deploy?repo=https://github.com/anjalsri/shaadi-qr)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/anjalsri/shaadi-qr&root-directory=frontend)
+
+*   **Live App (Frontend)**: `https://<your-vercel-app-name>.vercel.app`
+*   **Live API (Backend)**: `https://<your-render-service-name>.onrender.com`
+
 Shaadi QR is an Indian-themed web application designed to collect wedding photos, videos, and blessings from wedding guests instantly through custom-styled QR codes. Guests can upload media files (photos & videos) and blessings without downloading any mobile app or going through a login form.
 
 The platform includes client dashboards with interactive QR customization, ZIP album exports, PDF payment invoice generation, dynamic analytics, contact logs, spam protections (CAPTCHA), and superuser consoles.

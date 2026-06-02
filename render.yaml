@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: shaadi-qr-backend
+    env: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt && python manage.py collectstatic --no-input && python manage.py migrate
+    startCommand: gunicorn shaadi_qr.wsgi:application
+    envVars:
+      - key: DEBUG
+        value: "False"
+      - key: SECRET_KEY
+        generateValue: true
+      - key: MOCK_OTP
+        value: "True"
+      - key: RAZORPAY_TEST_MODE
+        value: "True"
