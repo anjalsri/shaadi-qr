@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:8000'; // Target backend during local development or via Vite dev proxy
+const BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000'; // Target backend during local development or production URL
 
 const getAuthHeaders = () => {
   const token = localStorage.getItem('access_token');
